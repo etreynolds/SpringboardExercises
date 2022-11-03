@@ -73,5 +73,7 @@
 // }
 
 function moreThan25Char(arr) {
-
+    arr.some(function (val) {
+        return word
+    })
 }
