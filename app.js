@@ -55,19 +55,23 @@
 
 // =================================== FILTER ===================================
 
-let letters = ['a', 'b', 'c', 'b', 'c'];
+// let letters = ['a', 'b', 'c', 'b', 'c'];
 
-const bLetters = letters.filter(function (val, idx, arr) {
-    return val === 'b';
-})
+// const bLetters = letters.filter(function (val, idx, arr) {
+//     return val === 'b';
+// })
 
-// Writing our own .filter method
-function myFilter(arr, callback) {
-    const filteredArray = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (callback(arr[i], i, arr)) {
-            filteredArray.push(arr[i])
-        }
-    }
-    return filteredArray;
+// // Writing our own .filter method
+// function myFilter(arr, callback) {
+//     const filteredArray = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (callback(arr[i], i, arr)) {
+//             filteredArray.push(arr[i])
+//         }
+//     }
+//     return filteredArray;
+// }
+
+function moreThan25Char(arr) {
+
 }
