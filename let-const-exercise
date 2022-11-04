@@ -2,6 +2,6 @@ const PI = 3.14
 
 QUIZ
 1. can redeclare var but cannot redeclare let. var has function scope, let has block scope
-2.
-3.
-4.
+2. can reassign and redeclare var, but can't do either with const. const has block scope, var has function scope
+3. can reassign with let, but not with const.
+4. hoisting means vars are "hoisted" to the top of the code and compiled before the declaration of the vars.
