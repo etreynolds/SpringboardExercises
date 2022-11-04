@@ -1,0 +1,7 @@
+const PI = 3.14
+
+QUIZ
+1. can redeclare var but cannot redeclare let. var has function scope, let has block scope
+2.
+3.
+4.
