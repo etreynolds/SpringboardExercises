@@ -78,7 +78,11 @@
 //     })
 // }
 
-let delicious = 'Mayonnaise';
-let disgusting = "Whipped Cream";
+// let delicious = 'Mayonnaise';
+// let disgusting = "Whipped Cream";
 
-[delicious, disgusting] = [disgusting, delicious];
+// [delicious, disgusting] = [disgusting, delicious];
+
+
+
+const raceResults = ([first, second, third, ...rest]) => ({ first, second, third, rest })
