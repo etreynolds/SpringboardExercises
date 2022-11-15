@@ -72,8 +72,13 @@
 //     return filteredArray;
 // }
 
-function moreThan25Char(arr) {
-    arr.some(function (val) {
-        return word
-    })
-}
+// function moreThan25Char(arr) {
+//     arr.some(function (val) {
+//         return word
+//     })
+// }
+
+let delicious = 'Mayonnaise';
+let disgusting = "Whipped Cream";
+
+[delicious, disgusting] = [disgusting, delicious];
