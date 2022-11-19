@@ -96,21 +96,31 @@
 
 
 
-function isVowel(char) {
-    return "aeiou".includes(char);
-}
+// function isVowel(char) {
+//     return "aeiou".includes(char);
+// }
 
-function vowelCount(str) {
-    const vowelMap = new Map();
-    for (let char of str) {
-        let lowerCaseChar = char.toLowerCase()
-        if (isVowel(lowerCaseChar)) {
-            if (vowelMap.has(lowerCaseChar)) {
-                vowelMap.set(lowerCaseChar, vowelMap.get(lowerCaseChar) + 1);
-            } else {
-                vowelMap.set(lowerCaseChar, 1);
-            }
-        }
+// function vowelCount(str) {
+//     const vowelMap = new Map();
+//     for (let char of str) {
+//         let lowerCaseChar = char.toLowerCase()
+//         if (isVowel(lowerCaseChar)) {
+//             if (vowelMap.has(lowerCaseChar)) {
+//                 vowelMap.set(lowerCaseChar, vowelMap.get(lowerCaseChar) + 1);
+//             } else {
+//                 vowelMap.set(lowerCaseChar, 1);
+//             }
+//         }
+//     }
+//     return vowelMap;
+// }
+
+class Car {
+    constructor(year, make, model, mileage) {
+        this.year = year;
+        this.make = make;
+        this.model = model;
+        this.mileage = mileage;
+        console.log(`You just purchased a ${year} ${make} ${model} with a mileage of ${mileage}!`)
     }
-    return vowelMap;
 }
