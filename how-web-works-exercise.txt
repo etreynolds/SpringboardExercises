@@ -3,4 +3,6 @@ URL -> internet resource address
 DNS -> Domain Name System - gives specific IP addresses/sites an easily searchable domain name
 Query string -> part of url/site address that is added on when a search is made (?q=search+phrase)
 HTTP verbs -> GET and POST - GET requests don't change server data, POST requests do
-HTTP request -> 
+HTTP request -> request from client to server through a protocol (like HTTP)
+HTTP reponse -> response from server to client following HTTP protocol (sends back html/js/etc)
+Processes -> browser converts name into IP address, requests info from that IP from server, server sends response with status code (200 if successful, 404 if error, etc), etc.
