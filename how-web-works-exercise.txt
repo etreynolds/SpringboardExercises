@@ -1,0 +1,6 @@
+HTTP -> HyperText Transfer Protocol - way to communicate with servers (make requests and receive responses)
+URL -> internet resource address
+DNS -> Domain Name System - gives specific IP addresses/sites an easily searchable domain name
+Query string -> part of url/site address that is added on when a search is made (?q=search+phrase)
+HTTP verbs -> GET and POST - GET requests don't change server data, POST requests do
+HTTP request -> 
