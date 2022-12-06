@@ -40,7 +40,6 @@ function addGif(res) {
     }
 };
 
-
 removeBtn.addEventListener("click", function () {
     gifArea.innerHTML = "";
-})
+});
