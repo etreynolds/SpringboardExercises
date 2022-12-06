@@ -1,12 +1,13 @@
-const gifArea = document.querySelector("#gif-area");
-const searchInput = document.querySelector("#search");
+const gifArea = document.getElementById("gif-area");
+const searchInput = document.getElementById("search");
+const removeBtn = document.getElementById("remove");
+const submit = document.getElementById("submit");
 
 
-$("form").on("submit", async function (e) {
+submit.addEventListener("click", async function (e) {
     e.preventDefault();
-
     let searchTerm = searchInput.value;
-    console.log(searchTerm);
+    // console.log(searchTerm);
 
     const res = await axios.get('http://api.giphy.com/v1/gifs/search', {
         params: {
@@ -15,10 +16,31 @@ $("form").on("submit", async function (e) {
         }
     });
     console.log(res);
-    console.log(res.data.data.length);
+    // console.log(res.data.data.length);
+    addGif(res);
+    searchInput.value = "";
 });
 
-function addGif() {
+function addGif(res) {
+    let numOfResults = res.data.data.length;
+    if (numOfResults > 0) {
+        let randomNumber = Math.floor(Math.random() * numOfResults);
+        let gifUrl = res.data.data[randomNumber].images.fixed_width.url;
+        const newCol = document.createElement("div");
+        // newCol.classList.add("col-md-4");
+        newCol.classList.add("col-md-6");
+        newCol.classList.add("mb-4");
+        gifArea.appendChild(newCol);
+        const newGif = document.createElement("img");
+        newGif.setAttribute("src", gifUrl);
+        newGif.classList.add("w-75");
+        newCol.appendChild(newGif);
+        console.log(gifUrl);
 
-}
+    }
+};
 
+
+removeBtn.addEventListener("click", function () {
+    gifArea.innerHTML = "";
+})

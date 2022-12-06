@@ -13,15 +13,19 @@
 <body class="bg-secondary">
 
   <h1 class="text-center">Giphy Party!</h1>
-  <div class="container form-group">
-    <form class="">
-      <input type="text" id="search" name="search" placeholder="Enter search term" class="">
-      <input type="submit" id="submit" class="btn btn-light">
-      <button class="btn btn-danger" id="remove">Remove Images</button>
+  <div class="container text-center form-group">
+    <form>
+      <div class="">
+        <input type="text" id="search" name="search" placeholder="Enter search term" class="w-25">
+        <input type="submit" id="submit" class="btn btn-light">
+        <button class="btn btn-danger" id="remove">Remove Images</button>
+      </div>
     </form>
+    <div id="gif-area" class="row">
+    </div>
   </div>
 
-  <div id="gif-area" class="row"></div>
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.js"></script>
